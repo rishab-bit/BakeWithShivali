@@ -1,7 +1,7 @@
 import React from 'react'
 const images = [
-  {image:'./images/cake.png',message:'Birthday'},{image:'./images/cake.png',message:'Anniversay'},{image:'./images/cake.png',message:'Half Birthday'},{image:'./images/cake.png',message:'Baby Shower'},{image:'./images/cake.png',message:'Engagement'},
-  {image:'./images/cake.png',message:'All Ocassions'}
+  {image:'/images/cake.png',message:'Birthday'},{image:'/images/cake.png',message:'Anniversay'},{image:'/images/cake.png',message:'Half Birthday'},{image:'/images/cake.png',message:'Baby Shower'},{image:'/images/cake.png',message:'Engagement'},
+  {image:'/images/cake.png',message:'All Ocassions'}
 ]
 
 function card({message}) {
