@@ -16,7 +16,7 @@ function Footer() {
           items-start">
 
         <div className="section1">
-      <img src="./images/logo.png" alt="" className='h-[95px] w-auto object-contain mb-6' />
+      <img src="/images/logo.png" alt="" className='h-[95px] w-auto object-contain mb-6' />
       <p className='text-[#5f4038] leading-8 text-[17px]'>
       Homemade cakes baked with love,
       <br />
@@ -24,11 +24,11 @@ function Footer() {
       <br />
       and every sweet movement
       </p>
-      <img src="./images/heart.png" alt="" className='h-6 w-6 object-contain my-5' />
+      <img src="/images/heart.png" alt="" className='h-6 w-6 object-contain my-5' />
 <div className="flex items-center gap-4">
   <a className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
     <img
-      src="./images/instagram.png"
+      src="/images/instagram.png"
       alt="instagram"
       className="w-6 h-6 object-contain"
     />
@@ -36,7 +36,7 @@ function Footer() {
 
   <a className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
     <img
-      src="./images/facebook.png"
+      src="/images/facebook.png"
       alt="facebook"
       className="w-6 h-6 object-contain"
     />
@@ -44,7 +44,7 @@ function Footer() {
 
   <a className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
     <img
-      src="./images/whatsapp.png"
+      src="/images/whatsapp.png"
       alt="whatsapp"
       className="w-6 h-6 object-contain"
     />
@@ -52,7 +52,7 @@ function Footer() {
 
   <a className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
     <img
-      src="./images/pinterest.png"
+      src="/images/pinterest.png"
       alt="pinterest"
       className="w-6 h-6 object-contain"
     />
@@ -132,7 +132,7 @@ function Footer() {
                   flex items-center justify-center
                 ">
                   <img
-                    src="./images/whatsapp.png"
+                    src="/images/whatsapp.png"
                     className="w-5 h-5 object-contain"
                     alt=""
                   />
@@ -149,7 +149,7 @@ function Footer() {
                   flex items-center justify-center
                 ">
                   <img
-                    src="./images/instagram.png"
+                    src="/images/instagram.png"
                     className="w-5 h-5 object-contain"
                     alt=""
                   />
@@ -205,7 +205,7 @@ function Footer() {
             </button>
 
             <img
-              src="./images/pastery.png"
+              src="/images/pastery.png"
               alt="Pastry"
               className="
                 absolute
@@ -221,7 +221,7 @@ function Footer() {
 
         </div>
     </footer>
-    <img src="./images/footer.png" alt="" className='w-full block object-cover' />
+    <img src="/images/footer.png" alt="" className='w-full block object-cover' />
     </>
   )
 }
