@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const Herosection = () => {
       const images = [
     {
-      Mobile : '/images/Hero-section-mobile.png',
+      Mobile : '/images/hero-mobile1.png',
       desktop: '/images/herosection1.png'
     },
     {
@@ -11,7 +11,7 @@ const Herosection = () => {
       desktop: '/images/herosection2.png'
     },
     {
-      Mobile : '/images/Hero-section-mobile.png',
+      Mobile : '/images/hero-mobile2.png',
       desktop: '/images/herosection3.png'
     }
   ];

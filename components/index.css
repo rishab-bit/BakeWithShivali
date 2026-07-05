@@ -15,7 +15,7 @@
   animation: slideFromLeft 0.8s ease-out forwards;
 }
 .RoundedNav{
-  @apply rounded-full px-6 py-2 border border-rose-400  text-black cursor-pointer text-[15px];
+  @apply max-[735px]:hidden rounded-full px-6 py-2 border border-rose-400  text-black cursor-pointer text-[15px];
 }
 @keyframes infiniteReviewScroll {
   from {
