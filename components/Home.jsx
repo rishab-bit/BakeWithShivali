@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div>
         <header className='flex items-centertop-0 left-0 w-full z-50 px-8 py-3 fixed bg-white' >
-      <img src="./images/hamburger.png" className='min-[736px]:hidden h-12' />
-      <img src="./images/logo.png" alt="bakeWithShivali" className='h-[76px] w-auto object-contain mr-10 absolute left-1/2 -translate-x-1/2 min-[736px]:static min-[736px]:translate-x-0' />
+      <img src="/images/hamburger.png" className='min-[736px]:hidden h-12' />
+      <img src="/images/logo.png" alt="bakeWithShivali" className='h-[76px] w-auto object-contain mr-10 absolute left-1/2 -translate-x-1/2 min-[736px]:static min-[736px]:translate-x-0' />
       <ul className='hidden  min-[736px]:flex items-center gap-8 ml-auto text-[17px] font-medium'>
       <NavItem>Home</NavItem>
       <NavItem>About us</NavItem>
@@ -30,7 +30,7 @@ const Home = () => {
         <Card />
         </div>
         <Reviews></Reviews>
-        <img src="./images/owner.png"className='h-[80vh] w-full'  alt="" />
+        <img src="/images/owner.png"className='h-[80vh] w-full'  alt="" />
         <Footer></Footer>
     </div>
   )

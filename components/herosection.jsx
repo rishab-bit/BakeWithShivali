@@ -3,16 +3,16 @@ import React, { useEffect, useState } from 'react'
 const Herosection = () => {
       const images = [
     {
-      Mobile : './images/Hero-section-mobile.png',
-      desktop: './images/herosection1.png'
+      Mobile : '/images/Hero-section-mobile.png',
+      desktop: '/images/herosection1.png'
     },
     {
-      Mobile : './images/Hero-section-mobile.png',
-      desktop: './images/herosection2.png'
+      Mobile : '/images/Hero-section-mobile.png',
+      desktop: '/images/herosection2.png'
     },
     {
-      Mobile : './images/Hero-section-mobile.png',
-      desktop: './images/herosection3.png'
+      Mobile : '/images/Hero-section-mobile.png',
+      desktop: '/images/herosection3.png'
     }
   ];
   const [currentImage, setCurrentImage]= useState(0);
