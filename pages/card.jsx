@@ -12,9 +12,9 @@ function card({message}) {
     <p className="text-rose-400 text-sm italic">
       Made for every moment
     </p>
-
     <h2 className="text-2xl font-semibold text-gray-800">
       Cakes for Every Celebration
+    <p className='flex items-center justify-center min-[735px]:hidden text-[#b47a18] text-xl font-bold italic '>Only In Hisar,Harayana</p>
     </h2>
   </div>
     <div className='w-full px-6 py-4 '>

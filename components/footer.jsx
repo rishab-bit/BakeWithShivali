@@ -131,6 +131,7 @@ function Footer() {
                   border border-rose-200
                   flex items-center justify-center
                 ">
+                  
                   <img
                     src="/images/whatsapp.png"
                     className="w-5 h-5 object-contain"
