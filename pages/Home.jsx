@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
-
 import Herosection from './herosection'
 import Card from './card'
 import Reviews from './reviews'
 import './index.css'
+import { Link } from 'react-router-dom'
 function Home(){
   return (
     <div>
-        <div className='animate-left pt-[100px]'>
+        <div className='animate-left'>
           <section id='home'>
+            <Link to="/ourCakes">
         <Herosection/>
+            </Link>
           </section>
         </div>
         <Card />

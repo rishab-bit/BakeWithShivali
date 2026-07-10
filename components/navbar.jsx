@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import NavItem from './navItem'
+import { Link } from 'react-router-dom';
 function Navbar() {
   const [openNav,setopenNav]=useState(false);
   const scrolltosection=(id)=>{
@@ -12,23 +13,16 @@ function Navbar() {
 }
   return (
     <div>
-       <header className='flex items-centertop-0 left-0 w-full z-50 px-8 py-3 fixed bg-white' >
+       <header className='flex items-center top-0 left-0 w-full z-50 px-8 py-3 fixed bg-white' >
       <img src="/images/hamburger.png" className='min-[736px]:hidden h-12' onClick={()=>setopenNav(!openNav)} />
       <img src="/images/logo.png" alt="bakeWithShivali" className='h-[76px] w-auto object-contain mr-10 absolute left-1/2 -translate-x-1/2 min-[736px]:static min-[736px]:translate-x-0' />
       <ul className='  hidden min-[736px]:flex items-center gap-8 ml-auto text-[17px] font-medium'>
-      <li onClick={()=>scrolltosection("home")}>
-        <NavItem>Home</NavItem>
-      </li>
-      <li onClick={()=>scrolltosection("Aboutus")}>
-      <NavItem>About us</NavItem>
-      </li>
-      <NavItem>Our Cakes</NavItem>
-      <li onClick={()=>scrolltosection("reviews")}>
-      <NavItem>Reviews</NavItem>
-      </li>
-      <li onClick={()=>scrolltosection("contact")}>
-      <NavItem>Contact</NavItem>
-      </li>
+        <NavItem onClick={()=>scrolltosection("home")}>Home</NavItem>
+      <NavItem onClick={()=>scrolltosection("Aboutus")}>About us</NavItem>
+      <NavItem><Link to='/ourCakes'>Our Cakes</Link></NavItem>
+      <NavItem onClick={()=>scrolltosection("reviews")}>Reviews</NavItem>
+      <NavItem onClick={()=>scrolltosection("contact")}>Contact</NavItem>
+      
       </ul>
       <div className={`
       w-[80%] bg-white h-[100vh] left-0 top-0 fixed min-[736px]:hidden border border-rose-200 ${openNav?"translate-x-0":"-translate-x-full"}`}>
