@@ -1,10 +1,7 @@
 import React from "react";
 
 const reviews = [
-  { name: "Priya", text: "The cake was absolutely delicious!" },
-  { name: "Rahul", text: "Perfect taste and amazing service." },
-  { name: "Neha", text: "Beautiful custom cake!" },
-  { name: "Simran", text: "Fresh and very tasty." },
+'/images/review1.png','/images/review2.png','/images/review3.png','/images/review4.png','/images/review5.png','/images/review6.png'
 ];
 
 function Reviews() {
@@ -20,58 +17,33 @@ function Reviews() {
         <div className="review-slider flex w-max">
 
           {/* FIRST COPY */}
-          <div className="flex gap-6 pr-6">
+           <div className="flex gap-6 pr-6">
             {reviews.map((review, index) => (
-              <ReviewCard
-                key={`first-${index}`}
-                review={review}
+              <img
+                key={index}
+                src={review}
+                alt="customer review"
+                className="w-[300px] h-auto object-contain"
+              />
+            ))}
+          </div> <div className="flex gap-6 pr-6">
+            {reviews.map((review, index) => (
+              <img
+                key={index}
+                src={review}
+                alt="customer review"
+                className="w-[300px] h-auto object-contain"
               />
             ))}
           </div>
-
-          {/* SECOND IDENTICAL COPY */}
-          <div className="flex gap-6 pr-6">
-            {reviews.map((review, index) => (
-              <ReviewCard
-                key={`second-${index}`}
-                review={review}
-              />
-            ))}
+          
           </div>
 
         </div>
-      </div>
     </section>
   );
 }
 
-function ReviewCard({ review }) {
-  return (
-    <div
-      className="
-        w-[300px]
-        shrink-0
-        rounded-2xl
-        border
-        border-rose-200
-        bg-white
-        p-6
-        shadow-sm
-      "
-    >
-      <div className="text-yellow-400 mb-3">
-        ★★★★★
-      </div>
 
-      <p className="text-gray-600">
-        “{review.text}”
-      </p>
-
-      <p className="mt-4 font-semibold">
-        — {review.name}
-      </p>
-    </div>
-  );
-}
 
 export default Reviews;

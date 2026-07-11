@@ -1,7 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef} from 'react'
+import { Link } from 'react-router-dom';
 
 const Herosection = () => {
-      const images = [
+  const touchStartX = useRef(0);
+const touchEndX = useRef(0);
+  const handletostart=(e)=>{
+    touchStartX.current = e.touches[0].clientX;
+  }
+  const handletoend=(e)=>{
+    touchEndX.current = e.touches[0].clientX;
+  }
+  const images = [
     {
       Mobile : '/images/hero-mobile1.png',
       desktop: '/images/herosection1.png'
@@ -16,24 +25,36 @@ const Herosection = () => {
     }
   ];
   const [currentImage, setCurrentImage]= useState(0);
+  const touchtoHandle=()=>{
+    const distance = touchStartX.current - touchEndX.current;
+    if (Math.abs(distance) < 50) return;
+    if(distance>0){
+      setCurrentImage((prev)=>(prev +1) % images.length);
+    }else{
+      setCurrentImage((prev)=>(prev -1 + images.length)% images.length);
+    }
+  }
   useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentImage(
-      (previousImage) => (previousImage + 1) % images.length
-    );
-  }, 5000);
+    const interval = setInterval(() => {
+      setCurrentImage(
+        (previousImage) => (previousImage + 1) % images.length
+      );
+    }, 5000);
 
   return () => clearInterval(interval);
 }, []);
   return (
     <div>
-              <section className='relative'>
+              <section className='relative' onTouchStart={handletostart}
+              onTouchMove={handletoend} onTouchEnd={touchtoHandle}>
+                <Link to='/ourCakes'>
           <picture>
           <source 
           media="(max-width:736px)"
           srcSet={images[currentImage].Mobile} />
            <img src={images[currentImage].desktop} alt="cake of love" className='object-center h-[84vh] w-full object-cover' />
           </picture>
+          </Link>
         <div className="absolute bottom-5
             left-1/2
             -translate-x-1/2

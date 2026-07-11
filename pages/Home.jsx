@@ -9,9 +9,7 @@ function Home(){
     <div>
         <div className='animate-left'>
           <section id='home'>
-            <Link to="/ourCakes">
         <Herosection/>
-            </Link>
           </section>
         </div>
         <Card />
@@ -19,7 +17,12 @@ function Home(){
         <Reviews></Reviews>
         </section>
         <section id='Aboutus'>
+          <picture>
+             <source 
+          media="(max-width:736px)"
+          srcSet='/images/chef_mobile_v2.png' />
         <img src="/images/owner.png"className='h-[80vh] w-full'  alt="" />
+          </picture>
         </section>
         <section id='contact'>
         </section>
