@@ -1,9 +1,9 @@
 import React from 'react'
 
-function NavItem({children}) {
+function NavItem({children,onClick}) {
   return (
     
-       <li className='list-none cursor-pointer'>
+       <li  onClick={onClick}className='list-none cursor-pointer'>
         <span className='group relative inline-block'>
             {children}
              <span 

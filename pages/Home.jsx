@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Herosection from './herosection'
 import Card from './card'
 import Reviews from './reviews'
+import { useLocation } from "react-router-dom";
 import './index.css'
 import { Link } from 'react-router-dom'
 function Home(){

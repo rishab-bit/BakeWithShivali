@@ -19,7 +19,7 @@ function Navbar() {
       <ul className='  hidden min-[736px]:flex items-center gap-8 ml-auto text-[17px] font-medium'>
         <NavItem onClick={()=>scrolltosection("home")}>Home</NavItem>
       <NavItem onClick={()=>scrolltosection("Aboutus")}>About us</NavItem>
-      <NavItem><Link to='/ourCakes'>Our Cakes</Link></NavItem>
+      <NavItem onClick={()=>setopenNav(false)}><Link to='/ourCakes'>Our Cakes</Link></NavItem>
       <NavItem onClick={()=>scrolltosection("reviews")}>Reviews</NavItem>
       <NavItem onClick={()=>scrolltosection("contact")}>Contact</NavItem>
       
@@ -29,7 +29,7 @@ function Navbar() {
         <ul className='pt-10 px-9 space-y-8 text-[17px] text-[#b47a18]' id='hide'>
           <li className='flex justify-between items-center' onClick={()=>{scrolltosection("home");setopenNav(false); }}>Home</li>
           <li className='flex justify-between items-center' onClick={()=>{scrolltosection("Aboutus");setopenNav(false);}}>About us</li>
-          <li className='flex justify-between items-center'>Our Cakes</li>
+          <li className="flex justify-between items-center"><Link to="/ourCakes" onClick={() => setopenNav(false)}>Our Cakes</Link></li>
           <li className='flex justify-between items-center' onClick={()=>{scrolltosection("reviews");setopenNav(false);}}>Reviews</li>
           <li className='flex justify-between items-center'>Contact</li>
         </ul>
@@ -38,8 +38,32 @@ function Navbar() {
 
      
       <div className='flex static items-center ml-auto gap-3'>
-      <button className='RoundedNav ' id="mediaquery">Hisar,Harayana</button>
-      <button className='RoundedNav' id="mediaquery"><a href ='https://wa.me/c/919306117358'>Order Now</a></button>
+      <button className='RoundedNav max-[735px]:hidden ' id="mediaquery">Hisar,Harayana</button>
+      <a
+  href="https://wa.me/c/919306117358"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="RoundedNav flex items-center gap-2"
+>
+  <img
+    src="/images/whatsapp.png"
+    alt="WhatsApp"
+    className="w-5 h-5"
+  />
+  Order Now
+</a>
+      <a
+  href="https://wa.me/c/919306117358"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="RoundedNav flex items-center gap-2 min-[736px]:hidden"
+>
+  <img
+    src="/images/whatsapp.png"
+    alt="WhatsApp"
+    className="w-5 h-5"
+  />
+</a>
       </div>
         </header>
     </div>

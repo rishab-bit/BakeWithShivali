@@ -7,28 +7,28 @@ export default function ourCakes() {
    infomation:"Delicious choclate like never taste before",
    price:'₹899'
   },{
-   image: "/images/product1.png",
+   image: "/images/product2.png",
    text:'Chocolate cake',
    infomation:"Delicious choclate like never taste before",
    price:'₹899'
   },{
-   image: "/images/product1.png",
+   image: "/images/product 3.png",
    text:'Chocolate cake',
    infomation:"Delicious choclate like never taste before",
    price:'₹899'
   },{
-   image: "/images/product1.png",
+   image: "/images/product4.png",
    text:'Chocolate cake',
    infomation:"Delicious choclate like never taste before",
    price:'₹899'
   },{
-   image: "/images/product1.png",
+   image: "/images/product5.png",
    text:'Chocolate cake',
    infomation:"Delicious choclate like never taste before",
    price:'₹899'
   },
   {
-   image: "/images/product1.png",
+   image: "/images/product6.png",
    text:'Chocolate cake',
    infomation:"Delicious choclate like never taste before",
    price:'₹899'
@@ -56,7 +56,7 @@ export default function ourCakes() {
         Freshly baked with love, just for you.
       </p>
 
-      <div className="flex mt-8 max-w-xl  gap-3 sm:gap-0 sm:flex-row">
+      {/* <div className="flex mt-8 max-w-xl  gap-3 sm:gap-0 sm:flex-row">
         <input
           type="text"
           placeholder="Search for cakes..."
@@ -66,12 +66,12 @@ export default function ourCakes() {
         <button className="bg-rose-400 text-white px-8 py-3 rounded-full sm:rounded-l-none sm:rounded-r-full hover:bg-rose-500 transition">
           Search
         </button>
-        </div>
+        </div> */}
       </div>
   </div >
 </div>
   <div className="max-w-7xl mx-auto px-6 py-12">
-<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center'>
   {items.map((item,index)=>(
     <div className="group w-64">
   <div className="min-h-[420px] bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 p-5 flex flex-col">

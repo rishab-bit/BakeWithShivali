@@ -26,7 +26,7 @@ function Footer() {
       </p>
       <img src="/images/heart.png" alt="" className='h-6 w-6 object-contain my-5' />
 <div className="flex items-center gap-4">
-  <a className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
+  <a  href='https://www.instagram.com/bakewithshivali/' className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
     <img
       src="/images/instagram.png"
       alt="instagram"
@@ -42,7 +42,7 @@ function Footer() {
     />
   </a>
 
-  <a className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
+  <a href='https://wa.me/c/919306117358'className="w-12 h-12 rounded-full border border-rose-200 flex items-center justify-center">
     <img
       src="/images/whatsapp.png"
       alt="whatsapp"
@@ -149,11 +149,13 @@ function Footer() {
                   border border-rose-200
                   flex items-center justify-center
                 ">
+                  <a href="https://www.instagram.com/bakewithshivali/">
                   <img
                     src="/images/instagram.png"
                     className="w-5 h-5 object-contain"
                     alt=""
                   />
+                  </a>
                 </span>
                 @bakewithshivali
               </li>
@@ -202,7 +204,9 @@ function Footer() {
               hover:bg-rose-500
               hover:-translate-y-0.5
             ">
+              <a href="https://wa.me/c/919306117358">
               WhatsApp Us ♡
+              </a>
             </button>
 
             <img
