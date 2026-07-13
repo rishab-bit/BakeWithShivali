@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
       <Navbar/>
-      <main className='pt-[90px]'>
+      <main className=''>
         <Outlet></Outlet>
       </main>
       <Footer/>

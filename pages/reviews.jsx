@@ -23,7 +23,7 @@ function Reviews() {
                 key={index}
                 src={review}
                 alt="customer review"
-                className="w-[300px] h-auto object-contain"
+                className="w-[300px] rounded-[25px] h-auto object-contain"
               />
             ))}
           </div> <div className="flex gap-6 pr-6">

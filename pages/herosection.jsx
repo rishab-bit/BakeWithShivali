@@ -45,14 +45,14 @@ const touchEndX = useRef(0);
 }, []);
   return (
     <div>
-              <section className='relative' onTouchStart={handletostart}
+              <section className='relative h-[700px] overflow-hidden' onTouchStart={handletostart}
               onTouchMove={handletoend} onTouchEnd={touchtoHandle}>
                 <Link to='/ourCakes'>
           <picture>
           <source 
           media="(max-width:736px)"
           srcSet={images[currentImage].Mobile} />
-           <img src={images[currentImage].desktop} alt="cake of love" className='object-center h-[84vh] w-full object-cover' />
+           <img src={images[currentImage].desktop} alt="cake of love" className='absolute inset-0 w-full h-full object-cover' />
           </picture>
           </Link>
         <div className="absolute bottom-5

@@ -131,12 +131,13 @@ function Footer() {
                   border border-rose-200
                   flex items-center justify-center
                 ">
-                  
+                  <a href="https://wa.me/c/919306117358">
                   <img
                     src="/images/whatsapp.png"
                     className="w-5 h-5 object-contain"
                     alt=""
                   />
+                  </a>
                 </span>
                 WhatsApp Us
               </li>
@@ -191,7 +192,7 @@ function Footer() {
               let&apos;s make your celebration
               extra special.
             </p>
-
+            <a href="https://wa.me/c/919306117358">
             <button className="
               mt-6
               w-full
@@ -204,10 +205,11 @@ function Footer() {
               hover:bg-rose-500
               hover:-translate-y-0.5
             ">
-              <a href="https://wa.me/c/919306117358">
+              
               WhatsApp Us ♡
-              </a>
+              
             </button>
+            </a>
 
             <img
               src="/images/pastery.png"
