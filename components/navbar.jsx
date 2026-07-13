@@ -43,7 +43,7 @@ function Navbar() {
   href="https://wa.me/c/919306117358"
   target="_blank"
   rel="noopener noreferrer"
-  className="RoundedNav flex items-center gap-2"
+  className="RoundedNav flex items-center gap-2 max-[736px]:hidden"
 >
   <img
     src="/images/whatsapp.png"
