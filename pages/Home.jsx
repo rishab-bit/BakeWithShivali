@@ -21,8 +21,8 @@ function Home(){
           <picture>
              <source 
           media="(max-width:736px)"
-          srcSet='/images/chef_mobile_v2.png' />
-        <img src="/images/owner.png"className='h-[80vh] w-full'  alt="" />
+          srcSet='/images/chef-mobile.png' />
+        <img src="/images/Aboutus.jpeg"className='h-[80vh] w-full'  alt="" />
           </picture>
         </section>
         <section id='contact'>
