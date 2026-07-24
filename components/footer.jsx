@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <>
@@ -70,11 +70,11 @@ function Footer() {
               Quick Links
             </h3>
     <ul>
-        <li>Home</li>
+        <Link to='/'><li>Home</li></Link>
         <li>About us</li>
         <li>Our Cakes</li>
         <li>Reviews</li>
-        <li>Contact</li>
+        <Link to='https://wa.me/c/919306117358'><li>Contact</li></Link>
     </ul>
 </div>
           <div className="lg:border-l lg:border-rose-100 lg:pl-10">
@@ -120,7 +120,7 @@ function Footer() {
                 ">
                   ☎
                 </span>
-                +91 99999 99999
+                +91 9306117358
               </li>
 
               <li className="flex items-center gap-3">

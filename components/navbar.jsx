@@ -1,9 +1,15 @@
 import React,{useState} from 'react'
 import NavItem from './navItem'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate,useLocation } from 'react-router-dom';
 function Navbar() {
   const [openNav,setopenNav]=useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
   const scrolltosection=(id)=>{
+     if (location.pathname !== "/") {
+    navigate("/", { state: { scrollTo: id } });
+    return;
+  }
     const section=document.getElementById(id);
     if(section){
       section.scrollIntoView({
@@ -18,7 +24,7 @@ function Navbar() {
       <Link to='/' className='absolute left-1/2 -translate-x-1/2 min-[736px]:static min-[736px]:translate-x-0'><img src="/images/logo.png" alt="bakeWithShivali" className="h-14 w-auto  min-[736px]:h-[76px]" /></Link>
       <ul className='  hidden min-[736px]:flex items-center gap-8 ml-auto text-[17px] font-medium'>
         <NavItem onClick={()=>scrolltosection("home")}>Home</NavItem>
-      <NavItem onClick={()=>scrolltosection("Aboutus")}>About us</NavItem>
+      <NavItem ><Link to='/aboutus'>About us</Link></NavItem>
       <NavItem onClick={()=>setopenNav(false)}><Link to='/ourCakes'>Our Cakes</Link></NavItem>
       <NavItem onClick={()=>scrolltosection("reviews")}>Reviews</NavItem>
       <NavItem onClick={()=>scrolltosection("contact")}>Contact</NavItem>
@@ -28,7 +34,7 @@ function Navbar() {
       w-[80%] bg-white h-[100vh] left-0 top-0 fixed min-[736px]:hidden border border-rose-200 ${openNav?"translate-x-0":"-translate-x-full"}`}>
         <ul className='pt-10 px-9 space-y-8 text-[17px] text-[#b47a18]' id='hide'>
           <li className='flex justify-between items-center' onClick={()=>{scrolltosection("home");setopenNav(false); }}>Home</li>
-          <li className='flex justify-between items-center' onClick={()=>{scrolltosection("Aboutus");setopenNav(false);}}>About us</li>
+         <li className='flex justify-between items-center' ><Link to='/aboutus' onClick={()=>{setopenNav(false);}}>About us</Link> </li>
           <li className="flex justify-between items-center"><Link to="/ourCakes" onClick={() => setopenNav(false)}>Our Cakes</Link></li>
           <li className='flex justify-between items-center' onClick={()=>{scrolltosection("reviews");setopenNav(false);}}>Reviews</li>
           <li className='flex justify-between items-center'>Contact</li>

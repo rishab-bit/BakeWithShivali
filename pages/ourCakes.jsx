@@ -3,101 +3,102 @@ import React,{useState} from 'react'
 export default function ourCakes() {
   const items = [{
    image: "/images/product1.png",
-   text:'Pineapple cake',
+   text:'Fruit cake',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
   },{
    image: "/images/product2.png",
-   text:'Chocolate cake',
+   text:'Bhagsu',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },{
    image: "/images/product 3.png",
-   text:'Chocolate cake',
+   text:'Blueberry cake',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },{
    image: "/images/product4.png",
    text:'Australian Lamington',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },{
    image: "/images/product5.png",
-   text:'Chocolate cake',
+   text:'Espresso Delight (Tiramisu)',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product6.png",
-   text:'Espresso Delight (Tiramisu)',
+   text:'Truffle',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
+  },
+  {
+   image: "/images/cupcake.png",
+   text:'cupcake',
+   infomation:"Delicious choclate like never taste before",
+  
   },
   {
    image: "/images/product7.png",
-   text:'Espresso Delight (Tiramisu)',
+   text:'Biscoff Brownie',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product8.png",
-   text:'Espresso Delight (Tiramisu)',
+   text:'Chocolate pastries',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product9.png",
-   text:'Espresso Delight (Tiramisu)',
+   text:'Pineapple cake',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product10.png",
    text:'Biscoff',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product12.png",
    text:'Black Forest pastries',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product13.png",
    text:'Cold biscoff cheese cake',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product14.png",
-   text:'Stawbery pasteries',
+   text:'Strawbery pasteries',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
+  
   },
   {
    image: "/images/product15.png",
    text:'Chocolate pastries',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
   },
   {
    image: "/images/product16.png",
-   text:'Rasmalai Cake',
+   text:'Mango Cake',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
   },
   {
    image: "/images/product17.png",
    text:'Hampers',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
   },
   {
    image: "/images/product18.png",
    text:'Bento Truffle Cake',
    infomation:"Delicious choclate like never taste before",
-   price:'₹899'
   }]
   const [search,setSearch]=useState("");
   const filteredItems = items.filter((item) =>
@@ -165,11 +166,6 @@ export default function ourCakes() {
 
       <p className="text-sm text-gray-500 leading-6">
         {item.infomation}
-      </p>
-
-      {/* Price */}
-      <p className="mt-auto text-xl font-bold text-rose-500">
-        {item.price}
       </p>
     </div>
     </div>
